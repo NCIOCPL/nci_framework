@@ -156,7 +156,6 @@ function drush_nci_framework_framework_check_modules($module_list = null) {
     }
 
     if (!empty($wrong_version)) {
-        var_export($wrong_version);
         drupal_set_message("Modules with mismatched versions:\n" .
             implode(', ', $wrong_version), 'warning');
     }
